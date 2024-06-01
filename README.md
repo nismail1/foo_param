@@ -82,7 +82,7 @@ jar cfm foo-parameterization.jar META-INF/MANIFEST.MF -C bin .
 3. Run the following command to execute the JAR file:
 
    ```
-   java -jar foo-parameterization.jar
+   java -jar foo-parameterization.jar <radius>
    ```
 
 ## Running Tests
