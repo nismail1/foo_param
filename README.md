@@ -63,10 +63,12 @@ To compile the project, follow these steps:
 1. Open a terminal or command prompt.
 2. Navigate to the project directory.
 3. Run the following command to compile the Java source files:
-javac -d bin -cp "lib/*" $(find src -name '*.java' -not -path "src/foo_parameterization/tests/*")
-jar cfm foo-parameterization.jar META-INF/MANIFEST.MF -C bin .
-   ```
 
+```
+javac -d bin -cp "lib/*" $(find src -name '*.java' -not -path "src/foo_parameterization/tests/*")
+ ```
+ ```
+jar cfm foo-parameterization.jar META-INF/MANIFEST.MF -C bin .
    ```
 
    This command compiles all Java source files in the `src` directory and places the compiled `.class` files in the `bin` directory.
