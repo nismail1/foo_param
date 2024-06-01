@@ -26,7 +26,8 @@ Navigate to the project directory.
 
 Run the following command to compile the Java source files:
 
-javac -d bin src/foo_parameterization/**/*.java
+javac -d bin -cp "lib/*" $(find src -name '*.java' -not -path "src/foo_parameterization/tests/*")
+jar cfm foo-parameterization.jar META-INF/MANIFEST.MF -C bin .
 
 
 Running the Project
@@ -38,12 +39,8 @@ Navigate to the project directory.
 
 Execute the project using the following command:
 
-java -jar foo-parameterization.jar
+java -jar foo-parameterization.jar <radius>
 
-
-Execute specific classes using the following command:
-
-java -cp bin src.foo_parameterization.tests.TestVolume
 
 
 
