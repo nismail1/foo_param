@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: foo_parameterization.Main
+Class-Path: foo_parameterization.jar
+Created-By: Nimo Ismail
