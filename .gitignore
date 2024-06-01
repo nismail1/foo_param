@@ -1,4 +1,6 @@
 *.class
 /bin/
 *.jar
-
+/lib/
+.vscode
+/testbin/
